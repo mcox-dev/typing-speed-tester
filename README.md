@@ -1,3 +1,5 @@
+[![mcox-dev](https://circleci.com/gh/mcox-dev/typing-speed-tester.svg?style=svg)](https://app.circleci.com/pipelines/github/mcox-dev/typing-speed-tester)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
