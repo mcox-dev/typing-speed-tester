@@ -1,19 +1,21 @@
 export function Key({ letter }) {
-    const bg = letter.state === null
-        ? '#CCC'
-        : letter.state === true
-            ? '#00FF00'
-            : '#FF0000'
+  const className = letter.state === null
+    ? 'bg-gray-200'
+    : letter.state === true
+      ? 'bg-green-100'
+      : 'bg-red-100'
 
-    return (
-        <span
-            style={{
-                background: bg
-            }}
-        >{letter.value}</span>
-    )
-} 
+  return (
+    <span
+      className={className}
+    >{letter.value}</span>
+  )
+}
 
 export default function Text({ text }) {
-    return text.map((letter, index) => <Key letter={letter} key={index} />)
+  return (
+    <div className="my-4 bg-gray-200 p-4">
+      {text.map((letter, index) => <Key letter={letter} key={index} />)}
+    </div>
+  )
 }
